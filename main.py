@@ -1,17 +1,10 @@
-from Grille import Grille
+from Grille import *
+import math
 
-GrilleIdiote = [[1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9],[1,2,3,4,5,6,7,8,9]]
-GrillePossible = [
-                    [2,9,-1,-1,-1,3,-1,-1,6],
-                    [-1,5,6,2,-1,9,3,-1,-1],
-                    [-1,-1,7,-1,6,5,-1,-1,2],
-                    [5,7,-1,-1,-1,2,4,-1,-1],
-                    [-1,2,3,-1,1,-1,7,5,-1],
-                    [8,-1,9,5,-1,-1,2,3,-1],
-                    [-1,4,-1,-1,-1,1,-1,7,3],
-                    [6,1,-1,-1,-1,4,-1,2,6],
-                    [-1,3,5,-1,-1,-1,8,1,4]]
+GrillePossible = getGrilleSimple()
 
 grille = Grille()
-grille.setGrille(GrillePossible)
+grille.setGrille(getGrillePossible())
 grille.printGrille()
+grille.solve()
+grille.printSolution()# 

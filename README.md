@@ -6,12 +6,16 @@ L'utilisation de l'IA a été limitée et n'est pas utilisée pour la rédaction
 Le but est de faire en python, un solveur de sudoku, a partir de 0.
 
 ## fonctionnalités a faire
-- lecture grille (tableau)
+- lecture grille (tableau) 
 - lecture grille (fichier json)
-- affichage de la grille (texte)
+- ✅ affichage de la grille (texte)
 
 - solveur
+- generation de grilles fonctionnelles
 
 ## notes:
 pour l'instant, le projet ne gérera que des grilles en 9*9
 Ce sera un tableau a 2 dimensions
+
+## commandes
+test: ```python -m unittest```
